@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import API from "../../utils/API";
+import API from "../../utils/API"
 import Button from 'react-bootstrap/Button'
-import {getSavedBooks} from "../utils/API";
+// import {getSavedBooks} from "../../utils/API"
 
 
 function SearchForm() {
@@ -12,7 +12,7 @@ function SearchForm() {
 
     useEffect(() => {
         const fetchBooks = async () => {
-            const books = await getSavedBooks()
+            const books = await API.getSavedBooks()
             setSavedBooks(books)
         }
     }, [])
