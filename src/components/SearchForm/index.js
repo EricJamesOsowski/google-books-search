@@ -72,7 +72,7 @@ function SearchForm() {
                 <div className="form-group">
                     <input type="text" onChange={handleChange} className="form-control mt-10" placeholder="Search For Books" autoComplete="off" />
                 </div>
-                <Button variant="outline" type="submit" className="btn btn-danger">Search</Button>
+                <Button style={{marginBottom: "10px"}}variant="outline" type="submit" className="btn btn-danger">Search</Button>
             </form>
         
             <div>
